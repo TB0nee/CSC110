@@ -68,19 +68,60 @@ border-radius: 15px;
 display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: ;
-  height: ;
+ 
 }
 
-.Body{
-  Height: 100%;
-  width: 40%;
+
+
+
+.Credential{
+  flex: 1;
   border: black solid 3px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  Margin: 4px;
 }
+
+
+
+
+.Text1{
+  flex:1;
+  font-size: 28px;
+  margin-left: 4px;
+}
+
+.Text2{
+  flex: 1;
+  font-size: 36px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.Text3{
+  flex: 1;
+  font-size: 36px;
+  text-align: center;
+}
+
+.Text4{
+  flex:1;
+  font-size: 36px;
+  margin-left: 20px;
+  
+}
+
 
 .Video{
-  
-  border: black solid 3px;
-  
-  
+  flex: 3;
+  border: black solid 3px;  
+  text-align: center;
+  margin: 4px;
 }
+
+
+
+
+
+
