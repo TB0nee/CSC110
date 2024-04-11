@@ -7,21 +7,27 @@
    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://kit.fontawesome.com/9847bd4d86.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <script src="script.js"></script>
-
   <div class="WholePage">
     
-<div class="top">
-<div class="Logo">
+<div class="top" >
+<div class="Logo" onclick="menuClick('show1')">
   <img src="Screenshot 2024-03-26 at 10.38.00 AM.png" class="InsureeaseLogo" alt="InsureEase">
 </div>
-  <div class="Button NCQACompliance">NCQA-Compliant</div>
-  <div class="Button Testimonials">Testimonials</div>
-  <div class="Button AboutUs">About Us</div>
-  <div class="Button ContactUs">Contact Us</div>
+
+  
+  <div class="Button" onclick="menuClick('show2')">NCQA-Compliant</div>
+  <div class="Button" onclick="menuClick('show3')">Testimonials</div>
+  <div class="Button" onclick="menuClick('show4')">About Us</div>
+  <div class="Button" onclick="menuClick('show5')">Contact Us</div>
 </div>
 
 <div class="content">
@@ -30,15 +36,22 @@
   
     <div class="Credential">
 
-      <div class="Text1">Credentialing:</div>
-     
-      <div class="Text2">Professional</div>
-      
-      <div class="Text3">Fast</div>
-      
-      <div class="Text4">Affordable</div>
-      
-      
+      <div class="c1">
+Credentialing Service:
+      </div><br>
+
+      <div class="c2">
+      Professional, Fast, Affordable
+      </div>
+
+      <div class="c3">
+        Wondering what credentialing is?<br> Click Here:
+
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK519504/" class="href">
+        <i class="fa-solid fa-circle-info"></i>
+        </a>
+        
+      </div>
     </div>
 
 
@@ -46,33 +59,121 @@
 
 
   
-    <div class="Video">
+    <div class="Video show" id="show1">
 
-      <video width="640" height="480" autoplay>
+      <div class="vid">
+        <video class="videoInsert" autoplay muted loop>
         <source src="Office Stock Footage - People Working As A Team _ Group Meeting _ Business Footage Free Download.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-        
-      </video>
+    
+      Your browser does not support the video tag.  
+          </video>
+      
+      
+      </div>
+   
+    
+  
 
       
     </div>
 
+<div class="NCQAContent noshow" id="show2">
+  
+<div class="NCQA">
+
+  <div class="NCQADescript">
+    What is NCQA compliance?<br><br>
+    The National Committe for Quality Assurance certifies healthcare services that provide exemplary data privacy and quality improvement processes. InsureEase has attained this level of certification.
+  </div>
+
+  <div class="NCQAlogo">
+    <img src="Image 4-2-24 at 11.02 AM.jpg" class="Image2" alt="NCQA Certification">
+  </div>
+
+  
+</div>
+</div>
+
+
+<div class="testimonialContent noshow" id="show3">
+<div class="testimonial">
+
+
+  <div class="testimonialpict">
+    <img src="stockdoc.jpeg" class="Image3" alt="Howard Samuel M.D.">
+  </div>
+  
+
+<div class="testimonialDescript"><br><br>
+Testimonial:<br><br>
+"The team at InsureEase has proved to be not only a more convenient avenue of credentialling, but also has reduced credentialling costs by half that our previous credentialling provider charged. I would reccommend all private medical clinics to make the transition to InsureEase."<br><br>
+  -Howard Samuel M.D.
+
+  
+
+
+  
+</div>
+</div>
+
+</div>
+
+
+
+
+<div class="AboutUsContent noshow" id="show4">
+<div class="AboutUs">
+
+  <div class="CEO">
+     <img src="ceoportrait.webp" class="Image4" alt="Jeff Smith CEO">
+<br><br>
+Jeff Smith CEO:<br><br>
+    With over 30 years of experience in the healthcare industry, Jeff has served as the CEO for Blue Ridge Healthcare and Staunton Credentialling. Jeff received his B.A. from Columbia University.
+
 
     
+  </div>
+
+<div class="CRO">
+   <img src="african+american+female+executive+headshot+on+grey.jpeg" class="Image5" alt="Jan Schmidt CRO">
+<br><br>
+  Jan Shmidt CRO:<br><br>
+      Jan hasa track record of implementing impactful sales strategies that have generated rapid growth wherever she has worked. 
+
+  
+</div>   
 </div>
 
 
   </div>
 
 
+<div class="contactUsContent noshow" id="show5"> 
 
+<div class="contactUs">
+<h3>Ways to reach us:</h3><br>
+  
 
+  <i class="material-icons icons" style="font-size: 30px;">call</i>
+(123) 456-7890<br><br>
 
+  <i class="material-icons icons" style="font-size: 30px;">email</i>
+InsureEase134@gmail.com<br><br>
 
+  <i class="material-icons icons" style="font-size: 30px;">place</i>
+  Anderson Blvd. Lexington, Virginia
+  
+</div>
+
+  
+  
+  
 
 
   
+</div>
+
 </body>
 
 </html>
