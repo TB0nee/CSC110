@@ -10,12 +10,9 @@ body{
 }
 
 .WholePage {
-  Display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   Height: 100%;
   Width: 100%;
-  background-image: linear-gradient(to bottom,yellow, white);
+  background-image: linear-gradient(to bottom,#f9f9ae, white);
 }
 
 .top{
@@ -26,22 +23,30 @@ body{
   border: solid black 5px;
   padding:20px;
   margin: 3px;
+  width: 100%;
   
 }
 
 .Logo{
   padding: 2px;
-  height: 100px;
-  width: 25%;
+ 
+
 }
 
 .Logo:hover{
   cursor: pointer;
+  border: solid black 3px;
+  border-radius: 10px;
+    transition: 1s;
+    transform: scale(1.1,1.1);
   }
 
 .InsureeaseLogo{
   height: 100%;
   width: 100%;
+  max-width: 250px;
+  min-width: 100px;
+  box-shadow: 5px 5px 5px black;
 }
 
 
@@ -52,7 +57,8 @@ body{
   margin-top: 28px;
   margin-bottom: 33px;
   width: 10%;
-
+  box-shadow: 5px 5px 5px black;
+  min-width: 100px;
 }
 
 .Button:hover{
@@ -66,9 +72,17 @@ border-radius: 15px;
 
 .content{
 display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  border: black solid 3px;  
+  text-align: center;
+  margin: 4px;
  
+}
+
+@media (max-width: 900px ){
+.content{
+flex-direction: column;
+}  
 }
 
 
@@ -76,49 +90,243 @@ display: flex;
 
 .Credential{
   flex: 1;
-  border: black solid 3px;
-  display: flex;
+  border: #161212 solid 3px;
   flex-wrap: wrap;
-  flex-direction: column;
   Margin: 4px;
 }
 
 
+.c1{
 
-
-.Text1{
-  flex:1;
-  font-size: 28px;
-  margin-left: 4px;
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 10px;
+font-size: 40px;
+  
 }
 
-.Text2{
-  flex: 1;
-  font-size: 36px;
-  text-align: right;
-  margin-right: 20px;
-}
+.c2{
 
-.Text3{
-  flex: 1;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
 }
 
-.Text4{
-  flex:1;
-  font-size: 36px;
-  margin-left: 20px;
+.c3{
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 24px;
+ 
+}
+
+.fa-circle-info{
+  font-size: 32px;
+}
+
+
+
+
+
+
+
+.fa-circle-info:hover{
+color: blue;
+  cursor: pointer;
+   
+  transform: scale(1.2,1.2);
+  
+  
   
 }
 
 
+
 .Video{
   flex: 3;
-  border: black solid 3px;  
   text-align: center;
   margin: 4px;
 }
+
+
+.videoInsert{
+  height:100%;
+  width: 100%;
+margin-right: 10px;
+  
+}
+
+
+
+
+.show{
+  display: block;
+}
+
+.noshow{
+  display: none;
+}
+
+
+.NCQAContent{
+  flex: 3;
+  border: black solid 3px; 
+  text-align: center;
+  margin: 4px;
+  flex-wrap: wrap;
+  
+}
+
+.NCQA{
+  Display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.NCQADescript{
+  flex: 1;
+  text-align: left;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 18px;
+
+  
+}
+
+.NCQALogo{
+  flex: 3;
+}
+
+.Image2{
+height: 400px;
+  width: 400px; 
+}
+
+@media (max-width:900px){
+  .Image2{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
+.testimonialContent{
+  flex: 3;
+  border: black solid 3px; 
+  text-align: center;
+  padding-top: 10px;
+  margin: 4px;
+
+}
+
+.testimonial{
+  Display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.testimonialpict{
+  flex: 1;
+}
+
+
+.testimonialDescript{
+  flex: 1;
+  text-align: left;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 18px;
+  flex-wrap: wrap;
+  
+}
+
+.Image3{
+  height: 300px;
+  width: 275px;
+}
+
+@media (max-width:850px){
+
+  .Image3{
+height: 200px;
+    width: 175px;
+  }
+  .testimonialDescript{
+    font-size: 14px;
+  }
+  
+}
+
+
+.AboutUsContent{
+  flex: 3;
+  border: black solid 3px; 
+  text-align: center;
+  padding: 20px;
+  margin: 4px;
+
+}
+
+
+
+.AboutUs{
+  Display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.CEO{
+flex: 1;
+  
+}
+
+.CRO{
+flex: 1;
+  
+}
+
+.Image4{
+  height: 400px;
+  width: 300px;
+}
+
+.Image5{
+  height: 400px;
+  width: 300px;
+}
+
+
+.contactUsContent{
+  flex: 3;
+  border: black solid 3px; 
+  text-align: left;
+ padding-left: 15px;
+  padding-bottom: 200px;
+font-size: 20px;
+  margin: 4px;
+  
+}
+
+
+
+
+
+@media (max-width:800px){
+
+  .Image4{
+    height: 200px;
+    width: 150px;
+  }
+
+  .Image5{
+    height: 200px;
+    width: 150px;
+
+  }
+
+}
+
+
 
 
 
